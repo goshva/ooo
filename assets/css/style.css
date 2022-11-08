@@ -7550,11 +7550,11 @@ html {
     -webkit-animation-duration: 1s;
             animation-duration: 1s; }
   .hiro-header-carousel .carousel-item-link {
-    display: inline-block;
+    display: block;
     font-size: 16px;
     font-weight: 700;
     color: #000000;
-    margin-bottom: 52px;
+    margin-bottom: 10px;
     -webkit-animation-delay: 1.25s;
             animation-delay: 1.25s;
     -webkit-animation-duration: 1s;

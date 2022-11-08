@@ -27,6 +27,72 @@
         #services {background-color: #b39ddb;}
         #works {background-color: #90a4ae;}
         #career {background-color: #90caf9;}
+        .container-container {
+            margin: 10px;
+            background-color: rgb(40, 47, 92);;
+        }
+        .container_foto {
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+            padding: 0 !important;
+        }
+
+        .container_foto article {
+            position: absolute;
+            bottom: 0;
+            padding: 0 0 10px 10px;
+            z-index: 1;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+        .container_foto h2 {
+            color: #b39ddb;
+            font-weight: 800;
+            font-size: 25px;
+            border-bottom: #fff solid 1px;
+        }
+
+        .container_foto h4 {
+            font-weight: 300;
+            color: #fff;
+            font-size: 16px;
+            background-color: #000;
+            opacity: 0.75;
+        }
+
+        .container_foto img {
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.75;
+            -webkit-transition: all 4s ease;
+            -moz-transition: all 4s ease;
+            -o-transition: all 4s ease;
+            -ms-transition: all 4s ease;
+            transition: all 4s ease;
+        }
+
+        .container_foto:hover {
+            cursor: pointer;
+        }
+
+        .container_foto:hover img {
+            opacity: 0.1;
+            transform: scale(1.5);
+        }
+
+        .container_foto:hover article {
+            transform: translate(2px, -69px);
+            -webkit-transform: translate(2px, -69px);
+            -moz-transform: translate(2px, -69px);
+            -o-transform: translate(2px, -69px);
+            -ms-transform: translate(2px, -69px);
+        }
     </style>
 </head>
 
@@ -36,7 +102,7 @@
         <nav>
             <div class="container">
                 <div class="hiro-nav">
-                    <a href="https://vit.ooo/" class="nav-brand logo">вАйТи</a>
+                    <a href="https://vit.ooo/" class="nav-brand logo wow tada slow">вАйТи</a>
                     <button class="hiro-nav-popup-toggle">
                         <svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Hiro" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -57,14 +123,14 @@
         </nav>
         <div class="container wow fadeInUp">
             <div id="hiroHeaderCarousel" class="hiro-header-carousel carousel slide" data-ride="carousel" data-interval="3500">
-                <div class="carousel-inner" role="listbox">
+                <div class="carousel-inner" role="listbox" style="overflow: visible !important">
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-md-6">
                                 <h1 class="carousel-item-title" data-animation="animated fadeInRight" data-number="01"><span>Разработка цифровых решений</span></h1>
                                 <p class="carousel-item-description" data-animation="animated fadeInRight">Наша компания готова помочь улучшить ваш сервис, продук или бизнес путём использования современных подходов, инструментов и фреймворков.</p>
                                 <a href="#services" class="carousel-item-link link-hover-fx" data-animation="animated fadeInRight">ПОДРОБНЕЕ</a>
-                                <ul class="carousel-item-social-links nav" data-animation="animated fadeInRight">
+                                <ul class="carousel-item-social-links nav wow rubberBand">
                                     <li>
                                         <a href="https://quasar.dev/" class="link-hover-fx">Quasar</a>
                                     </li>
@@ -87,7 +153,7 @@
                                 <h1 class="carousel-item-title" data-animation="animated fadeInRight" data-number="02"><span>Внедрение инноваций</span></h1>
                                 <p class="carousel-item-description" data-animation="animated fadeInRight">Использование для бизнеса новейших технологий на основе Блокчейн, Больших данных и Машинного обучения.</p>
                                 <a href="#services" class="carousel-item-link link-hover-fx" data-animation="animated fadeInRight">ПОДРОБНЕЕ</a>
-                                <ul class="carousel-item-social-links nav" data-animation="animated fadeInRight">
+                                <ul class="carousel-item-social-links nav" data-animation="animated rubberBand">
                                     <li>
                                         <a href="https://near.org/" class="link-hover-fx">Near</a>
                                     </li>
@@ -110,7 +176,7 @@
                                 <h1 class="carousel-item-title" data-animation="animated fadeInRight" data-number="03"><span>Сопровождение проектов</span></h1>
                                 <p class="carousel-item-description" data-animation="animated fadeInRight">Наши специалисты сопровождают клиентов на протяжении всего жизненного цикла проекта.</p>
                                 <a href="#!" class="carousel-item-link link-hover-fx" data-animation="animated fadeInRight">ПОДРОБНЕЕ</a>
-                                <ul class="carousel-item-social-links nav" data-animation="animated fadeInRight">
+                                <ul class="carousel-item-social-links nav" data-animation="animated rubberBand">
                                     <li>
                                         <a href="https://www.docker.com/" class="link-hover-fx">Docker</a>
                                     </li>
@@ -191,12 +257,12 @@
     <section class="bg-primary hiro-section" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 d-flex flex-column justify-content-center wow fadeInUp">
+                <div class="col-md-6 d-flex flex-column justify-content-center wow fadeInDown slow">
                     <h2 class="section-title mb-3">Агентство цифровых интеграций</h2>
                     <p class="section-text-ct">ООО «вАйТи» &mdash; это не только команда профессионалов, которая поможет Вам и Вашему бизнесу стать лидером в своем сегменте или обойти конкурентов, это также  пул собственных, протестированных цифровых решений для оптимизации бизнеса, которые гарантируют успех их использования.</p>
                 </div>
                 <div class="col-md-6 wow fadeInUp">
-                    <img src="assets/images/img_3.png" class="w-100 mb-5" alt="Digital Product Design">
+                    <img src="assets/images/img_3.png" class="w-100 mb-5" />
                     <p class="section-text-light">Доверяя нам свои бизнес-процессы, вы получаете не только результат, но и понимание их функционирования и связей.</p>
                     <!--button class="hiro-btn-outline">VIEW MORE</button-->
                 </div>
@@ -243,35 +309,46 @@
         </div>
     </section>
     <section class="projects-section hiro-section" id="works">
-        <div class="container">
+        <div class="container" style="margin-top: 50px">
             <div class="row">
-                <div class="col-md-6wow fadeInUp">
-                    <div class="project-card wow fadeInUp">
-                        <img src="img/pro-narasimha.png" class="project-thumbnail">
-                        <h6 class="project-title">Narasimha</h6>
-                        <p class="Project-category">Обработка и хранение рыночных данных, прогнозы, сигналы</p>
-                    </div>
-                    <div class="project-card wow fadeInUp">
-                        <img src="img/pro-yat.png" class="project-thumbnail">
-                        <h6 class="project-title">Ятѣ</h6>
-                        <p class="Project-category">Натуральный обмен ценностями</p>
-                    </div>
+              <div class="col-6 container_foto">
+                <div class="container-container wow fadeInLeft">
+                  <article class="text-left wow wobble slower">
+                    <h2>Narasimha</h2>
+                    <h4>Обработка и хранение рыночных данных</h4>
+                  </article>
+                  <img src="img/pro-narasimha.png" />
                 </div>
-                <div class="col-md-6 project-column-indented">
-                    <div class="project-card wow fadeInUp">
-                        <img src="img/pro-gw.png" class="project-thumbnail">
-                        <h6 class="project-title">GreenWord</h6>
-                        <p class="Project-category">Позитивный инфопоток</p>
-                    </div>
-                    <div class="project-card wow fadeInUp">
-                        <img src="img/pro-incripto.png" class="project-thumbnail">
-                        <h6 class="project-title">Incripto</h6>
-                        <p class="Project-category">Зашифрованный одноранговый чат</p>
-                    </div>
+              </div>
+              <div class="col-6 container_foto wow fadeInRight">
+                <div class="container-container">
+                  <article class="text-left wow wobble slower">
+                    <h2>Ятѣ</h2>
+                    <h4>Натуральный обмен ценностями</h4>
+                  </article>
+                  <img src="img/pro-yat.png" />
                 </div>
-                <div class="col-12">
-                    <a href="#!" class="load-more-link">ВСЁ</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 container_foto wow fadeInLeft">
+                <div class="container-container">
+                  <article class="text-left wow wobble slower">
+                    <h2>GreenWord</h2>
+                    <h4>Позитивный инфопоток</h4>
+                  </article>
+                  <img src="img/pro-gw.png" />
                 </div>
+              </div>
+              <div class="col-6 container_foto wow fadeInRight">
+                <div class="container-container">
+                  <article class="text-left wow wobble slower">
+                    <h2>Incripto</h2>
+                    <h4>Зашифрованный одноранговый чат</h4>
+                  </article>
+                  <img src="img/pro-incripto.png" />
+                </div>
+              </div>
             </div>
         </div>
     </section>

@@ -6,6 +6,10 @@ $('.hiro-nav-popup-toggle').click(function(){
 $('.hiro-main-nav .nav-link[href^="#"]:not([href="#!"])').click(function(){
     $('body').removeClass('hiro-nav-popup-modal-open');
 });
+
+$('.hiro-pro-nav .pro-link[href^="#"]:not([href="#!"])').click(function(){
+  $('body').removeClass('hiro-nav-popup-modal-open');
+});
 $myCarousel = $('.carousel');
 
 function doAnimations(elems) {

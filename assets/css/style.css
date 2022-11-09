@@ -7743,10 +7743,7 @@ html {
       font-size: 42px; } }
 
 .contact-social-links .nav-link {
-  padding: 0 8px; }
-  .contact-social-links .nav-link img {
-    width: 20px;
-    height: 20px; }
+  padding: 0 15px 0 0; font-size: 1.5em; color: black;}
 
 .contact-page-wrapper {
   min-height: calc(100vh - 188px);

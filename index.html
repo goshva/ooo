@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <link rel="icon" type="image/x-icon" href="/img/favicon.svg" />
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>ООО «вАйТи»</title>
@@ -12,734 +11,1346 @@
     <meta name="yandex-verification" content="408dcc32111025c9" />
     <link rel="stylesheet" href="assets/vendors/animate.css/animate.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <script src="assets/vendors/jquery/jquery.min.js"></script>
     <script src="assets/js/loader.js"></script>
-    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(91502557, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/91502557" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+      ym(91502557, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+        trackHash: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/91502557"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
     <!--
         FIXME:
         https://michalsnik.github.io/aos/
         https://animate.style/
     -->
     <style>
-        .logo {
-            font-family: 'Marmelad', sans-serif;
-            font-size: 40px;
-            color: #000
-        }
-        .hiro-nav-popup-toggle {
-            position: fixed;
-            top: 50px;
-            right: 50px;
-        }
-        #services {background-color: #b39ddb;}
-        #works {background-color: #90a4ae;}
-        #career {background-color: #90caf9;}
-        .container-container {
-            margin: 10px;
-            background-color: rgb(40, 47, 92);;
-        }
-        .container_foto {
-            padding: 0;
-            overflow: hidden;
-            position: relative;
-            padding: 0 !important;
-        }
+      .logo {
+        font-family: "Marmelad", sans-serif;
+        font-size: 40px;
+        color: #000;
+      }
+      .hiro-nav-popup-toggle {
+        position: fixed;
+        top: 50px;
+        right: 50px;
+      }
+      #services {
+        background-color: #b39ddb;
+      }
+      #works {
+        background-color: #90a4ae;
+      }
+      #career {
+        background-color: #90caf9;
+      }
+      .container-container {
+        margin: 10px;
+        background-color: rgb(40, 47, 92);
+      }
+      .container_foto {
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+        padding: 0 !important;
+      }
 
-        .container_foto article {
-            position: absolute;
-            bottom: 0;
-            padding: 0 0 10px 10px;
-            z-index: 1;
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-            -ms-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-        }
+      .container_foto article {
+        position: absolute;
+        bottom: 0;
+        padding: 0 0 10px 10px;
+        z-index: 1;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+      }
 
-        .container_foto h2 {
-            color: #b39ddb;
-            font-weight: 800;
-            font-size: 25px;
-            border-bottom: #fff solid 1px;
-        }
+      .container_foto h2 {
+        color: #b39ddb;
+        font-weight: 800;
+        font-size: 25px;
+        border-bottom: #fff solid 1px;
+      }
 
-        .container_foto h4 {
-            font-weight: 300;
-            color: #fff;
-            font-size: 16px;
-            background-color: #000;
-            opacity: 0.75;
-        }
+      .container_foto h4 {
+        font-weight: 300;
+        color: #fff;
+        font-size: 16px;
+        background-color: #000;
+        opacity: 0.75;
+      }
 
-        .container_foto img {
-            width: 100%;
-            top: 0;
-            left: 0;
-            opacity: 0.75;
-            -webkit-transition: all 4s ease;
-            -moz-transition: all 4s ease;
-            -o-transition: all 4s ease;
-            -ms-transition: all 4s ease;
-            transition: all 4s ease;
-        }
+      .container_foto img {
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.75;
+        -webkit-transition: all 4s ease;
+        -moz-transition: all 4s ease;
+        -o-transition: all 4s ease;
+        -ms-transition: all 4s ease;
+        transition: all 4s ease;
+      }
 
-        .container_foto:hover {
-            cursor: pointer;
-        }
+      .container_foto:hover {
+        cursor: pointer;
+      }
 
-        .container_foto:hover img {
-            opacity: 0.1;
-            transform: scale(1.5);
-        }
+      .container_foto:hover img {
+        opacity: 0.1;
+        transform: scale(1.5);
+      }
 
-        .container_foto:hover article {
-            transform: translate(2px, -69px);
-            -webkit-transform: translate(2px, -69px);
-            -moz-transform: translate(2px, -69px);
-            -o-transform: translate(2px, -69px);
-            -ms-transform: translate(2px, -69px);
-        }
-        .carousel-item-social-links {display:inline-flex}
+      .container_foto:hover article {
+        transform: translate(2px, -69px);
+        -webkit-transform: translate(2px, -69px);
+        -moz-transform: translate(2px, -69px);
+        -o-transform: translate(2px, -69px);
+        -ms-transform: translate(2px, -69px);
+      }
+      .carousel-item-social-links {
+        display: inline-flex;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="hiro-loader"></div>
     <header class="hiro-header home-header" id="top">
-        <nav>
-            <div class="container">
-                <div class="hiro-nav">
-                    <a href="https://vit.ooo/" class="nav-brand logo wow tada slow">вАйТи</a>
-                    <button class="hiro-nav-popup-toggle">
-                        <svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="Hiro" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="hiro-agency" transform="translate(-964.000000, -37.000000)" fill="#FFFFFF">
-                                    <g id="Menu" transform="translate(964.000000, 37.000000)">
-                                        <g id="menu">
-                                            <rect id="Rectangle" fill-rule="nonzero" x="-8.05281767e-14" y="7.50795322" width="19.9609942" height="2.4951462"></rect>
-                                            <rect id="Rectangle" fill-rule="nonzero" x="-8.05281767e-14" y="14.9964327" width="19.9609942" height="2.4951462"></rect>
-                                            <rect id="Rectangle" fill-rule="nonzero" x="-8.05281767e-14" y="0.0194736842" width="19.9609942" height="2.4951462"></rect>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </nav>
-        <div class="container wow fadeInUp">
-            <div id="hiroHeaderCarousel" class="hiro-header-carousel carousel slide" data-ride="carousel" data-interval="3500">
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h1 class="carousel-item-title" data-animation="animated fadeInRight" data-number="01"><span>Разработка цифровых решений</span></h1>
-                                <p class="carousel-item-description" data-animation="animated fadeInRight">Наша компания готова помочь улучшить ваш сервис, продук или бизнес путём использования современных подходов, инструментов и фреймворков.</p>
-                                <a href="#services" class="carousel-item-link link-hover-fx" data-animation="animated fadeInRight">ПОДРОБНЕЕ</a>
-                                <ul class="carousel-item-social-links nav wow rubberBand">
-                                    <li>
-                                        <a href="https://quasar.dev/" class="link-hover-fx">Quasar</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://vuejs.org/" class="link-hover-fx">Vue.js</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://fastapi.tiangolo.com/" class="link-hover-fx">FastAPI</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <img src="img/about-01.jpg" class="img-fluid w-100 rounded" width="372px">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h1 class="carousel-item-title" data-animation="animated fadeInRight" data-number="02"><span>Внедрение инноваций</span></h1>
-                                <p class="carousel-item-description" data-animation="animated fadeInRight">Использование для бизнеса новейших технологий на основе Блокчейн, Больших данных и Машинного обучения.</p>
-                                <a href="#services" class="carousel-item-link link-hover-fx" data-animation="animated fadeInRight">ПОДРОБНЕЕ</a>
-                                <ul class="carousel-item-social-links nav" data-animation="animated rubberBand">
-                                    <li>
-                                        <a href="https://near.org/" class="link-hover-fx">Near</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.influxdata.com/" class="link-hover-fx">InfluxDB</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.tensorflow.org/" class="link-hover-fx">TensorFlow</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <img src="img/about-02.jpg" class="img-fluid w-100 rounded" width="372px">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h1 class="carousel-item-title" data-animation="animated fadeInRight" data-number="03"><span>Сопровождение проектов</span></h1>
-                                <p class="carousel-item-description" data-animation="animated fadeInRight">Наши специалисты сопровождают клиентов на протяжении всего жизненного цикла проекта.</p>
-                                <a href="#!" class="carousel-item-link link-hover-fx" data-animation="animated fadeInRight">ПОДРОБНЕЕ</a>
-                                <ul class="carousel-item-social-links nav" data-animation="animated rubberBand">
-                                    <li>
-                                        <a href="https://www.docker.com/" class="link-hover-fx">Docker</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.ansible.com/" class="link-hover-fx">Ansible</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.jenkins.io/" class="link-hover-fx">Jenkins</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <img src="img/about-03.jpg" class="img-fluid w-100 rounded" width="372px">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <ol class="carousel-indicators">
-                    <li data-target="#hiroHeaderCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#hiroHeaderCarousel" data-slide-to="1"></li>
-                    <li data-target="#hiroHeaderCarousel" data-slide-to="2"></li>
-                </ol>
-            </div>
+      <nav>
+        <div class="container">
+          <div class="hiro-nav">
+            <a href="https://vit.ooo/" class="nav-brand logo wow tada slow"
+              >вАйТи</a
+            >
+            <button class="hiro-nav-popup-toggle">
+              <svg
+                width="20px"
+                height="18px"
+                viewBox="0 0 20 18"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g
+                  id="Hiro"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="hiro-agency"
+                    transform="translate(-964.000000, -37.000000)"
+                    fill="#FFFFFF"
+                  >
+                    <g id="Menu" transform="translate(964.000000, 37.000000)">
+                      <g id="menu">
+                        <rect
+                          id="Rectangle"
+                          fill-rule="nonzero"
+                          x="-8.05281767e-14"
+                          y="7.50795322"
+                          width="19.9609942"
+                          height="2.4951462"
+                        ></rect>
+                        <rect
+                          id="Rectangle"
+                          fill-rule="nonzero"
+                          x="-8.05281767e-14"
+                          y="14.9964327"
+                          width="19.9609942"
+                          height="2.4951462"
+                        ></rect>
+                        <rect
+                          id="Rectangle"
+                          fill-rule="nonzero"
+                          x="-8.05281767e-14"
+                          y="0.0194736842"
+                          width="19.9609942"
+                          height="2.4951462"
+                        ></rect>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </button>
+          </div>
         </div>
+      </nav>
+      <div class="container wow fadeInUp">
+        <div
+          id="hiroHeaderCarousel"
+          class="hiro-header-carousel carousel slide"
+          data-ride="carousel"
+          data-interval="3500"
+        >
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1
+                    class="carousel-item-title"
+                    data-animation="animated fadeInRight"
+                    data-number="01"
+                  >
+                    <span>Разработка цифровых решений</span>
+                  </h1>
+                  <p
+                    class="carousel-item-description"
+                    data-animation="animated fadeInRight"
+                  >
+                    Наша компания готова помочь улучшить ваш сервис, продук или
+                    бизнес путём использования современных подходов,
+                    инструментов и фреймворков.
+                  </p>
+                  <a
+                    href="#services"
+                    class="carousel-item-link link-hover-fx"
+                    data-animation="animated fadeInRight"
+                    >ПОДРОБНЕЕ</a
+                  >
+                  <ul class="carousel-item-social-links nav wow rubberBand">
+                    <li>
+                      <a href="https://quasar.dev/" class="link-hover-fx"
+                        >Quasar</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://vuejs.org/" class="link-hover-fx"
+                        >Vue.js</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://fastapi.tiangolo.com/"
+                        class="link-hover-fx"
+                        >FastAPI</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <img
+                    src="img/about-01.jpg"
+                    class="img-fluid w-100 rounded"
+                    width="372px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1
+                    class="carousel-item-title"
+                    data-animation="animated fadeInRight"
+                    data-number="02"
+                  >
+                    <span>Внедрение инноваций</span>
+                  </h1>
+                  <p
+                    class="carousel-item-description"
+                    data-animation="animated fadeInRight"
+                  >
+                    Использование для бизнеса новейших технологий на основе
+                    Блокчейн, Больших данных и Машинного обучения.
+                  </p>
+                  <a
+                    href="#services"
+                    class="carousel-item-link link-hover-fx"
+                    data-animation="animated fadeInRight"
+                    >ПОДРОБНЕЕ</a
+                  >
+                  <ul
+                    class="carousel-item-social-links nav"
+                    data-animation="animated rubberBand"
+                  >
+                    <li>
+                      <a href="https://near.org/" class="link-hover-fx">Near</a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.influxdata.com/"
+                        class="link-hover-fx"
+                        >InfluxDB</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.tensorflow.org/"
+                        class="link-hover-fx"
+                        >TensorFlow</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <img
+                    src="img/about-02.jpg"
+                    class="img-fluid w-100 rounded"
+                    width="372px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1
+                    class="carousel-item-title"
+                    data-animation="animated fadeInRight"
+                    data-number="03"
+                  >
+                    <span>Сопровождение проектов</span>
+                  </h1>
+                  <p
+                    class="carousel-item-description"
+                    data-animation="animated fadeInRight"
+                  >
+                    Наши специалисты сопровождают клиентов на протяжении всего
+                    жизненного цикла проекта.
+                  </p>
+                  <a
+                    href="#!"
+                    class="carousel-item-link link-hover-fx"
+                    data-animation="animated fadeInRight"
+                    >ПОДРОБНЕЕ</a
+                  >
+                  <ul
+                    class="carousel-item-social-links nav"
+                    data-animation="animated rubberBand"
+                  >
+                    <li>
+                      <a href="https://www.docker.com/" class="link-hover-fx"
+                        >Docker</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.ansible.com/" class="link-hover-fx"
+                        >Ansible</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.jenkins.io/" class="link-hover-fx"
+                        >Jenkins</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <img
+                    src="img/about-03.jpg"
+                    class="img-fluid w-100 rounded"
+                    width="372px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="carousel-indicators">
+            <li
+              data-target="#hiroHeaderCarousel"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#hiroHeaderCarousel" data-slide-to="1"></li>
+            <li data-target="#hiroHeaderCarousel" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
     </header>
     <div class="hiro-nav-popup-modal">
-        <div class="hiro-nav-popup-modal-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 menu-wrapper">
-                        <ul class="nav hiro-main-nav">
-                            <li class="nav-item">
-                                <a href="#about" class="nav-link">О нас</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#services" class="nav-link">Услуги</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#works" class="nav-link">Работы</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#team" class="nav-link">Команда</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#career" class="nav-link">Карьера</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#contact" class="nav-link">Контакт</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 blog-posts text-white hiro-pro-nav">
-                        <h5 class="popup-blog-headng">Последнее</h5>
-                        <div class="media mb-4">
-                            <img src="img/pro-narasimha.png" alt="blog" width="140px" class="img-fluid mr-4">
-                            <div class="media-body align-self-end">
-                                <h5 class="popup-blog-post-title"><a href="#works" class="pro-link text-white">Нарасимха:<br>Крипто-пузыри</a></h5>
-                            </div>
-                        </div>
-                        <div class="media mb-4">
-                            <img src="img/pro-yat.png" alt="blog" width="140px" class="img-fluid mr-4">
-                            <div class="media-body align-self-end">
-                                <h5 class="popup-blog-post-title"><a href="#works" class="pro-link text-white">Ятѣ: Обмен<br>Ценностями</a></h5>
-                            </div>
-                        </div>                     
-                        <div class="media mb-4">
-                            <img src="img/pro-gm.png" alt="blog" width="140px" class="img-fluid mr-4">
-                            <div class="media-body align-self-end">
-                                <h5 class="popup-blog-post-title"><a href="#works" class="pro-link text-white">Град мастеров: Ярмарки<br>Рукоделья</a></h5>
-                            </div>
-                        </div>                        
-                        <!--p><a href="#works" class="text-white link-hover-fx text-decoration-none" class="font-weight-medium">Все</a></p-->
-                    </div>
-                </div>
+      <div class="hiro-nav-popup-modal-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 menu-wrapper">
+              <ul class="nav hiro-main-nav">
+                <li class="nav-item">
+                  <a href="#about" class="nav-link">О нас</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#services" class="nav-link">Услуги</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#works" class="nav-link">Работы</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#team" class="nav-link">Команда</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#career" class="nav-link">Карьера</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link">Контакт</a>
+                </li>
+              </ul>
             </div>
+            <div class="col-md-6 blog-posts text-white hiro-pro-nav">
+              <h5 class="popup-blog-headng">Последнее</h5>
+              <div class="media mb-4">
+                <img
+                  src="img/pro-narasimha.png"
+                  alt="blog"
+                  width="140px"
+                  class="img-fluid mr-4"
+                />
+                <div class="media-body align-self-end">
+                  <h5 class="popup-blog-post-title">
+                    <a href="#works" class="pro-link text-white"
+                      >Нарасимха:<br />Крипто-пузыри</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="media mb-4">
+                <img
+                  src="img/pro-yat.png"
+                  alt="blog"
+                  width="140px"
+                  class="img-fluid mr-4"
+                />
+                <div class="media-body align-self-end">
+                  <h5 class="popup-blog-post-title">
+                    <a href="#works" class="pro-link text-white"
+                      >Ятѣ: Обмен<br />Ценностями</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="media mb-4">
+                <img
+                  src="img/pro-gm.png"
+                  alt="blog"
+                  width="140px"
+                  class="img-fluid mr-4"
+                />
+                <div class="media-body align-self-end">
+                  <h5 class="popup-blog-post-title">
+                    <a href="#works" class="pro-link text-white"
+                      >Град мастеров: Ярмарки<br />Рукоделья</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <!--p><a href="#works" class="text-white link-hover-fx text-decoration-none" class="font-weight-medium">Все</a></p-->
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <section class="bg-primary hiro-section" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 d-flex flex-column justify-content-center wow fadeInDown slow">
-                    <h2 class="section-title mb-3">Агентство цифровых интеграций</h2>
-                    <p class="section-text-ct">«вАйТи» &mdash; это не только команда профессионалов, которая поможет Вам и Вашему бизнесу стать лидером в своем сегменте или обойти конкурентов, это также  пул собственных, протестированных цифровых решений для оптимизации бизнеса, которые гарантируют успех их использования.</p>
-                </div>
-                <div class="col-md-6 wow fadeInUp">
-                    <img src="img/art.png" class="w-100 mb-5" />
-                    <p class="section-text-light">Доверяя нам свои бизнес-процессы, вы получаете не только результат, но и понимание их функционирования и связей.</p>
-                    <!--button class="hiro-btn-outline">VIEW MORE</button-->
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-6 d-flex flex-column justify-content-center wow fadeInDown slow"
+          >
+            <h2 class="section-title mb-3">Агентство цифровых интеграций</h2>
+            <p class="section-text-ct">
+              «вАйТи» &mdash; это не только команда профессионалов, которая
+              поможет Вам и Вашему бизнесу стать лидером в своем сегменте или
+              обойти конкурентов, это также пул собственных, протестированных
+              цифровых решений для оптимизации бизнеса, которые гарантируют
+              успех их использования.
+            </p>
+          </div>
+          <div class="col-md-6 wow fadeInUp">
+            <img src="img/art.png" class="w-100 mb-5" />
+            <p class="section-text-light">
+              Доверяя нам свои бизнес-процессы, вы получаете не только
+              результат, но и понимание их функционирования и связей.
+            </p>
+            <!--button class="hiro-btn-outline">VIEW MORE</button-->
+          </div>
         </div>
+      </div>
     </section>
     <section class="hiro-section" id="services">
-        <div class="container">
-            <div class="service-section">
-                <h2 class="section-title career-section-title">Услуги</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4 mb-md-0 wow fadeInUp">
-                        <h6 class="service-category-title">Development</h6>
-                        <ul class="service-list list-group list-group-flush">
-                            <li class="list-group-item">Сайты, лендинги и порталы</li>
-                            <li class="list-group-item">Прогрессивные веб-приложения</li>
-                            <li class="list-group-item">Мобильные приложения Android и iOS</li>
-                            <li class="list-group-item">Telegram-боты</li>
-                            <li class="list-group-item">QR-маркетинг</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 mb-4 mb-md-0 wow fadeInUp">
-                        <h6 class="service-category-title">Research</h6>
-                        <ul class="service-list list-group list-group-flush">
-                            <li class="list-group-item">Сбор больших данных</li>
-                            <li class="list-group-item">Хранение, обработка и визуализация</li>
-                            <li class="list-group-item">Веб-скрейпинг и автоматизация браузера</li>
-                            <li class="list-group-item">Интеграция в блокчейн и смарт-контракты</li>
-                            <li class="list-group-item">Машинное обучение и нейронные сети</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 mb-4 mb-md-0 wow fadeInUp">
-                        <h6 class="service-category-title">DevOps</h6>
-                        <ul class="service-list list-group list-group-flush">
-                            <li class="list-group-item">Администрирование облачной инфраструктуры</li>
-                            <li class="list-group-item">Непрерывные интеграция и развёртывание</li>
-                            <li class="list-group-item">Контейнеризация приложений</li>
-                            <li class="list-group-item">Документоориентированные базы данных</li>
-                            <li class="list-group-item">Гибкие методологии разработки</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="service-section">
+          <h2 class="section-title career-section-title">Услуги</h2>
+          <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0 wow fadeInUp">
+              <h6 class="service-category-title">Development</h6>
+              <ul class="service-list list-group list-group-flush">
+                <li class="list-group-item">Сайты, лендинги и порталы</li>
+                <li class="list-group-item">Прогрессивные веб-приложения</li>
+                <li class="list-group-item">
+                  Мобильные приложения Android и iOS
+                </li>
+                <li class="list-group-item">Telegram-боты</li>
+                <li class="list-group-item">QR-маркетинг</li>
+              </ul>
             </div>
+            <div class="col-md-4 mb-4 mb-md-0 wow fadeInUp">
+              <h6 class="service-category-title">Research</h6>
+              <ul class="service-list list-group list-group-flush">
+                <li class="list-group-item">Сбор больших данных</li>
+                <li class="list-group-item">
+                  Хранение, обработка и визуализация
+                </li>
+                <li class="list-group-item">
+                  Веб-скрейпинг и автоматизация браузера
+                </li>
+                <li class="list-group-item">
+                  Интеграция в блокчейн и смарт-контракты
+                </li>
+                <li class="list-group-item">
+                  Машинное обучение и нейронные сети
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0 wow fadeInUp">
+              <h6 class="service-category-title">DevOps</h6>
+              <ul class="service-list list-group list-group-flush">
+                <li class="list-group-item">
+                  Администрирование облачной инфраструктуры
+                </li>
+                <li class="list-group-item">
+                  Непрерывные интеграция и развёртывание
+                </li>
+                <li class="list-group-item">Контейнеризация приложений</li>
+                <li class="list-group-item">
+                  Документоориентированные базы данных
+                </li>
+                <li class="list-group-item">Гибкие методологии разработки</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="projects-section hiro-section" id="works">
-        <div class="container" style="margin-top: 50px">
-            <div class="row">
-              <div class="col-md-6 mb-md-0 container_foto wow fadeInLeft">
-                <div class="container-container" data-toggle="modal" data-target="#narasimha">
-                  <article class="text-left wow wobble slower">
-                    <h2>Narasimha</h2>
-                    <h4>Обработка и хранение рыночных данных</h4>
-                  </article>
-                  <img src="img/pro-narasimha.png" />
+      <div class="container" style="margin-top: 50px">
+        <div class="row">
+          <div class="col-md-6 mb-md-0 container_foto wow fadeInLeft">
+            <div
+              class="container-container"
+              data-toggle="modal"
+              data-target="#narasimha"
+            >
+              <article class="text-left wow wobble slower">
+                <h2>Narasimha</h2>
+                <h4>Обработка и хранение рыночных данных</h4>
+              </article>
+              <img src="img/pro-narasimha.png" />
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="narasimha"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    Narasimha: провайдер рыночных данных
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
-              </div>
-              <div class="modal fade" id="narasimha" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Narasimha: провайдер рыночных данных</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Пожалуй, одним из самых показательных индикаторов настроения инвесторов является то, в какую сторону исполняются рыночные заявки.</p>
-                        <p>Пузыри - это объём разницы между рыночной покупкой и продажей за некий интервал времени.</p>
-                        <p>Второй индикатор - это непрерывная рыночная Accumulation/Distribution (AD), основанная на Пузырях.</p>
-                        <p>Третий - это True Strength Index (TSI) от AD и Цены.</p>
-                        <p>Последний график - это AD по уровням Цены.</p>
-                        <p><a href="https://narasimha.net/">narasimha.net</a></p>            
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mb-md-0 container_foto wow fadeInRight">
-                <div class="container-container" data-toggle="modal" data-target="#yat">
-                  <article class="text-left wow wobble slower">
-                    <h2>Ятѣ</h2>
-                    <h4>Натуральный обмен ценностями</h4>
-                  </article>
-                  <img src="img/pro-yat.png" />
-                </div>
-              </div>
-              <div class="modal fade" id="yat" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Ятѣ: система обмена ценностями</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Ять - это открытая, неизменяемая и доказуемая бухгалтерская книга; система, позволяющая прозрачно следить за движениями средств внутри себя.</p>
-                        <p>Ять - это не рубль, не криптовалюта и не платёжная система - это обмен ценностями, правами и обязательствами.</p>
-                        <p>Ять - это умные контракты, которые заключаются также просто, как рукопожатие.</p>
-                        <p>В основе находится направленный ациклический граф - цепочка транзакций, где каждая следующая подтверждает легитимность предыдущей. Это достигается благодаря системе хэширования - генерации уникальных цифровых отпечатков данных и их связи в единую ориентированную структуру. Малейшие попытки манипулирования её историей немедленно и лавинообразно приведут к недостоверности всей цепочки. Такая особенность делает бессмысленными подобные действия, ведь открытую историю может алгоритмически проверить любой желающий и убедиться в её целостности.</p>
-                        <p><a href="https://yat.li/">yat.li</a></p>            
-                    </div>
-                  </div>
+                <div class="modal-body">
+                  <p>
+                    Пожалуй, одним из самых показательных индикаторов настроения
+                    инвесторов является то, в какую сторону исполняются рыночные
+                    заявки.
+                  </p>
+                  <p>
+                    Пузыри - это объём разницы между рыночной покупкой и
+                    продажей за некий интервал времени.
+                  </p>
+                  <p>
+                    Второй индикатор - это непрерывная рыночная
+                    Accumulation/Distribution (AD), основанная на Пузырях.
+                  </p>
+                  <p>Третий - это True Strength Index (TSI) от AD и Цены.</p>
+                  <p>Последний график - это AD по уровням Цены.</p>
+                  <p><a href="https://narasimha.net/">narasimha.net</a></p>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-6 mb-md-0 container_foto wow fadeInLeft">
-                <div class="container-container" data-toggle="modal" data-target="#gw">
-                  <article class="text-left wow wobble slower">
-                    <h2>GreenWord</h2>
-                    <h4>Позитивный инфопоток</h4>
-                  </article>
-                  <img src="img/pro-gw.png" />
+          </div>
+          <div class="col-md-6 mb-md-0 container_foto wow fadeInRight">
+            <div
+              class="container-container"
+              data-toggle="modal"
+              data-target="#yat"
+            >
+              <article class="text-left wow wobble slower">
+                <h2>Ятѣ</h2>
+                <h4>Натуральный обмен ценностями</h4>
+              </article>
+              <img src="img/pro-yat.png" />
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="yat"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    Ятѣ: система обмена ценностями
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
-              </div>
-              <div class="modal fade" id="gw" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">GreenWord: человек и природа</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>GreenWord мы произносим как гринво́рд и понимаем как зелёное слово. Для нас зелёный цвет - это яркость жизни. Даже когда голубое небо закрыто серыми тучами, зелёный цвет всегда под рукой. Просто посмотрите на листик, ведь вся мудрость вселенной пульсирует в нём. Зелёный цвет не является для нас символом борьбы за экологию, это простое стечение слов. Мы ценим жизнь, а борьба противоречит этой ценности.</p>
-                        <p>Мы говорим Зелёным Словом</p>
-                        <p>О животных, растениях, человеке, земных и внеземных пространствах и разнообразных связях этих систем.</p>
-                        <p>Мы выражаем благодарность Природе за её мудрость, великолепие разнообразия, красоту, естественную связь всего живого и данную нам возможность наслаждаться, творить, развиваться и жить.</p>
-                        <p>О чём мы повествуем: виртуальные путешествия, картинки удалённых уголков света, любопытнейшие виды растений и животных, творческие изыскания в контексте природы, экологические перспективы - глобальные и персональные, альтернативные способы сохранения здоровья Планеты и Человека на ней, уникальные природные явления, глубокие авторские взгляды на мир вокруг.</p>
-                        <p>Мы заботимся о достоверности публикуемой информации: создаём авторские тексты, часто основываясь на зарубежных материалах, уделяем обязательное внимание сохранению источников, используем авторские иллюстрации.</p>
-                        <p><a href="https://greenword.ru/">greenword.ru</a></p>            
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mb-md-0 container_foto wow fadeInRight">
-                <div class="container-container" data-toggle="modal" data-target="#incripto">
-                  <article class="text-left wow wobble slower">
-                    <h2>Incripto</h2>
-                    <h4>Зашифрованный одноранговый чат</h4>
-                  </article>
-                  <img src="img/pro-incripto.png" />
-                </div>
-              </div>
-              <div class="modal fade" id="incripto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Incripto: крипто-тоннель</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Сейчас вариант использования видится следующим:</p>
-                        <p>1. Алиса генерирует (или использует имеющийся) Приватный Ключ (далее Ключ). Из него алгоритм выводит Публичный Адрес (далее Адрес), который по открытым каналам в виде выданной ссылки передаётся Шляпнику.</p>
-                        <p>2. Шляпник, перейдя по ссылке и генерируя (или используя существующий) Ключ, получает свой Адрес и имеет на руках уже всё необходимое для переписки с Алисой.</p>
-                        <p>3. И мне так не хочется на пальцах расписывать дальнейшие действия :) так что будем надеяться, что Шляпник методом тыка или разумных действий таки пишет первое зашифрованное сообщение Алисе, подписывая его своим Ключом и прикрепляя к нему обратный Адрес.</p>
-                        <p>4. Теперь только Алиса сможет, расшифровав это сообщение своим Ключом и Адресом Шляпника, прочитать его.</p>
-                        <p>5. Конфиденциальный и приватный канал связи открыт. Теперь никто и никогда не узнает о чём же сейчас говорят Алиса и Шляпник, ведь это их личное дело. А когда они закончат, то просто закрыв браузеры, сотрут историю своей переписки навсегда.</p>
-                        <p>6. История умалчивает, что было нужно Красной Королеве, которая ещё тысячи лет будет пытаться прочитать (просчитать) хоть одно сообщение из того диалога, но доподлинно известно, что Чеширскому Коту (:серверу:) было изначально всё равно; он просто перекидывал летающие от Алисы к Шляпнику и в обратную сторону сгустки шифробредятины, не то что не пытаясь сохранить их копию у себя для дальнейшего изучения, но даже практически не держа их в руках.</p>
-                        <p><a href="https://yzoz.com/">yzoz.com</a></p>            
-                    </div>
-                  </div>
+                <div class="modal-body">
+                  <p>
+                    Ять - это открытая, неизменяемая и доказуемая бухгалтерская
+                    книга; система, позволяющая прозрачно следить за движениями
+                    средств внутри себя.
+                  </p>
+                  <p>
+                    Ять - это не рубль, не криптовалюта и не платёжная система -
+                    это обмен ценностями, правами и обязательствами.
+                  </p>
+                  <p>
+                    Ять - это умные контракты, которые заключаются также просто,
+                    как рукопожатие.
+                  </p>
+                  <p>
+                    В основе находится направленный ациклический граф - цепочка
+                    транзакций, где каждая следующая подтверждает легитимность
+                    предыдущей. Это достигается благодаря системе хэширования -
+                    генерации уникальных цифровых отпечатков данных и их связи в
+                    единую ориентированную структуру. Малейшие попытки
+                    манипулирования её историей немедленно и лавинообразно
+                    приведут к недостоверности всей цепочки. Такая особенность
+                    делает бессмысленными подобные действия, ведь открытую
+                    историю может алгоритмически проверить любой желающий и
+                    убедиться в её целостности.
+                  </p>
+                  <p><a href="https://yat.li/">yat.li</a></p>
                 </div>
               </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 mb-md-0 container_foto wow fadeInLeft">
-                  <div class="container-container" data-toggle="modal" data-target="#onefabric">
-                    <article class="text-left wow wobble slower">
-                      <h2>#1 Fabric</h2>
-                      <h4>Первая трикотажная фабрика</h4>
-                    </article>
-                    <img src="img/pro-onefabric.png" />
-                  </div>
-                </div>
-                <div class="modal fade" id="onefabric" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">OneFabric</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                            <p>Когда вы думаете про трикотаж, то обычно подразумеваете все его возможные вариации, формы и цвета. Это майки и шорты, рубашки и брюки, футболки и бриджи; одним словом всё от толстовки до халата, что вы ежедневно не задумываясь надеваете, дабы чувствовать себя теплее, комфортнее и защищённей. При его выборе вы практически всегда отталкиваетесь от ставших для вас привычными критериев: интересный узор, приятный материал, доступная ценность. И тем не менее в воздухе всегда витает нечто неуловимое, что не несёт в себе целостной определённой характеристики, но чувствуется каждой порой вашего существа, ведь это будет с ним в столь близком контакте, что, пожалуй, является в некотором роде доминантой.</p>
-                            <p>Именно эту эфемерность мы, как производители, и считаем наиболее значимой в процессе создания трикотажной одежды. Мы подобрались к ней несколько ближе, чем наши покупатели, ведь она исходит именно от нас. Это комплексный подход к созданию такой продукции, которая бы не только радовала своим качеством, но и дарила чувство особенной уникальности от соприкосновения с ней.</p>
-                            <p><a href="https://onefabric.ru/">onefabric.ru</a></p>            
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 mb-md-0 container_foto wow fadeInRight">
-                  <div class="container-container" data-toggle="modal" data-target="#enlightenment">
-                    <article class="text-left wow wobble slower">
-                      <h2>Enlightenment.Finance</h2>
-                      <h4>Enlightenment of your money</h4>
-                    </article>
-                    <img src="img/pro-enlightenment.png" />
-                  </div>
-                </div>
-                <div class="modal fade" id="enlightenment" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Enlightenment Finance</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                          <p>Open crypto foundation</p>
-                          <p><a href="https://enlightenment.finance/">enlightenment.finance</a></p>            
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <div class="row">
-                <div class="col-md-6 mb-md-0 container_foto wow fadeInLeft">
-                    <div class="container-container" data-toggle="modal" data-target="#sw">
-                        <article class="text-left wow wobble slower">
-                            <h2>Змееслов</h2>
-                            <h4>Запоминаем новые слова</h4>
-                        </article>
-                        <img src="img/pro-sw.png" />
-                    </div>
-                </div>
-                <div class="modal fade" id="sw" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Snakeword: Учим слова с умом</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Змееслов </p>
-                                <p>Описание в процессе...</p>
-                                <p><a href="https://snakeword.ru/">snakeword.ru</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-md-0 container_foto wow fadeInLeft">
-                    <div class="container-container" data-toggle="modal" data-target="#gm">
-                        <article class="text-left wow wobble slower">
-                            <h2>Град мастеров</h2>
-                            <h4>Ярмарки Рукоделья</h4>
-                        </article>
-                        <img src="img/pro-gm.png" />
-                    </div>
-                </div>
-                <div class="modal fade" id="gm" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Град Мастеров : ярмарки рукоделья</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Град Мастеров </p>
-                                <p>Рады приветствовать вас на нашем фестевале-ярмарке. Здесь мы собрали для вас уникальные сувениры сделаные нашеми умельцами, сделаные с любовью и заботой об окружающей среде.</p>
-                                <p>Ярмарки под открытым небом. Мы проводим и настоящие праздники под открытым небом. Это и выступления и развлечения и ярамрки. Присоеденяйтесь к нам!</p>
-                                <p>Эстетика, здоровье и польза. В каждом изделии заряд позитива и добра. Гарантируем :)</p>
-                                <p>Состав нашего успеха. Ингридиенты просты, но каждый из них ключевой:</p>
-                                <p>Проффесионалы: Мастера сочетают личный опыт и традиционные технологии</p>
-                                <p>Неповторимость: Штучный коллекционный товар, залог того, что за действительно соящими вещями люди приходят к нам </p>
-                                <p>Контроль качества: Мы проверяем целосность перед каждой продажей и пользуемся заботливой доставкой </p>
-                                <p><a href="https://grad-masterov.ru/">Град Мастеров</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>           
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md-6 mb-md-0 container_foto wow fadeInLeft">
+            <div
+              class="container-container"
+              data-toggle="modal"
+              data-target="#gw"
+            >
+              <article class="text-left wow wobble slower">
+                <h2>GreenWord</h2>
+                <h4>Позитивный инфопоток</h4>
+              </article>
+              <img src="img/pro-gw.png" />
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="gw"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    GreenWord: человек и природа
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    GreenWord мы произносим как гринво́рд и понимаем как зелёное
+                    слово. Для нас зелёный цвет - это яркость жизни. Даже когда
+                    голубое небо закрыто серыми тучами, зелёный цвет всегда под
+                    рукой. Просто посмотрите на листик, ведь вся мудрость
+                    вселенной пульсирует в нём. Зелёный цвет не является для нас
+                    символом борьбы за экологию, это простое стечение слов. Мы
+                    ценим жизнь, а борьба противоречит этой ценности.
+                  </p>
+                  <p>Мы говорим Зелёным Словом</p>
+                  <p>
+                    О животных, растениях, человеке, земных и внеземных
+                    пространствах и разнообразных связях этих систем.
+                  </p>
+                  <p>
+                    Мы выражаем благодарность Природе за её мудрость,
+                    великолепие разнообразия, красоту, естественную связь всего
+                    живого и данную нам возможность наслаждаться, творить,
+                    развиваться и жить.
+                  </p>
+                  <p>
+                    О чём мы повествуем: виртуальные путешествия, картинки
+                    удалённых уголков света, любопытнейшие виды растений и
+                    животных, творческие изыскания в контексте природы,
+                    экологические перспективы - глобальные и персональные,
+                    альтернативные способы сохранения здоровья Планеты и
+                    Человека на ней, уникальные природные явления, глубокие
+                    авторские взгляды на мир вокруг.
+                  </p>
+                  <p>
+                    Мы заботимся о достоверности публикуемой информации: создаём
+                    авторские тексты, часто основываясь на зарубежных
+                    материалах, уделяем обязательное внимание сохранению
+                    источников, используем авторские иллюстрации.
+                  </p>
+                  <p><a href="https://greenword.ru/">greenword.ru</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-md-0 container_foto wow fadeInRight">
+            <div
+              class="container-container"
+              data-toggle="modal"
+              data-target="#incripto"
+            >
+              <article class="text-left wow wobble slower">
+                <h2>Incripto</h2>
+                <h4>Зашифрованный одноранговый чат</h4>
+              </article>
+              <img src="img/pro-incripto.png" />
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="incripto"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    Incripto: крипто-тоннель
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Сейчас вариант использования видится следующим:</p>
+                  <p>
+                    1. Алиса генерирует (или использует имеющийся) Приватный
+                    Ключ (далее Ключ). Из него алгоритм выводит Публичный Адрес
+                    (далее Адрес), который по открытым каналам в виде выданной
+                    ссылки передаётся Шляпнику.
+                  </p>
+                  <p>
+                    2. Шляпник, перейдя по ссылке и генерируя (или используя
+                    существующий) Ключ, получает свой Адрес и имеет на руках уже
+                    всё необходимое для переписки с Алисой.
+                  </p>
+                  <p>
+                    3. И мне так не хочется на пальцах расписывать дальнейшие
+                    действия :) так что будем надеяться, что Шляпник методом
+                    тыка или разумных действий таки пишет первое зашифрованное
+                    сообщение Алисе, подписывая его своим Ключом и прикрепляя к
+                    нему обратный Адрес.
+                  </p>
+                  <p>
+                    4. Теперь только Алиса сможет, расшифровав это сообщение
+                    своим Ключом и Адресом Шляпника, прочитать его.
+                  </p>
+                  <p>
+                    5. Конфиденциальный и приватный канал связи открыт. Теперь
+                    никто и никогда не узнает о чём же сейчас говорят Алиса и
+                    Шляпник, ведь это их личное дело. А когда они закончат, то
+                    просто закрыв браузеры, сотрут историю своей переписки
+                    навсегда.
+                  </p>
+                  <p>
+                    6. История умалчивает, что было нужно Красной Королеве,
+                    которая ещё тысячи лет будет пытаться прочитать (просчитать)
+                    хоть одно сообщение из того диалога, но доподлинно известно,
+                    что Чеширскому Коту (:серверу:) было изначально всё равно;
+                    он просто перекидывал летающие от Алисы к Шляпнику и в
+                    обратную сторону сгустки шифробредятины, не то что не
+                    пытаясь сохранить их копию у себя для дальнейшего изучения,
+                    но даже практически не держа их в руках.
+                  </p>
+                  <p><a href="https://yzoz.com/">yzoz.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-md-0 container_foto wow fadeInLeft">
+            <div
+              class="container-container"
+              data-toggle="modal"
+              data-target="#onefabric"
+            >
+              <article class="text-left wow wobble slower">
+                <h2>#1 Fabric</h2>
+                <h4>Первая трикотажная фабрика</h4>
+              </article>
+              <img src="img/pro-onefabric.png" />
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="onefabric"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    OneFabric
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Когда вы думаете про трикотаж, то обычно подразумеваете все
+                    его возможные вариации, формы и цвета. Это майки и шорты,
+                    рубашки и брюки, футболки и бриджи; одним словом всё от
+                    толстовки до халата, что вы ежедневно не задумываясь
+                    надеваете, дабы чувствовать себя теплее, комфортнее и
+                    защищённей. При его выборе вы практически всегда
+                    отталкиваетесь от ставших для вас привычными критериев:
+                    интересный узор, приятный материал, доступная ценность. И
+                    тем не менее в воздухе всегда витает нечто неуловимое, что
+                    не несёт в себе целостной определённой характеристики, но
+                    чувствуется каждой порой вашего существа, ведь это будет с
+                    ним в столь близком контакте, что, пожалуй, является в
+                    некотором роде доминантой.
+                  </p>
+                  <p>
+                    Именно эту эфемерность мы, как производители, и считаем
+                    наиболее значимой в процессе создания трикотажной одежды. Мы
+                    подобрались к ней несколько ближе, чем наши покупатели, ведь
+                    она исходит именно от нас. Это комплексный подход к созданию
+                    такой продукции, которая бы не только радовала своим
+                    качеством, но и дарила чувство особенной уникальности от
+                    соприкосновения с ней.
+                  </p>
+                  <p><a href="https://onefabric.ru/">onefabric.ru</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-md-0 container_foto wow fadeInRight">
+            <div
+              class="container-container"
+              data-toggle="modal"
+              data-target="#enlightenment"
+            >
+              <article class="text-left wow wobble slower">
+                <h2>Enlightenment.Finance</h2>
+                <h4>Enlightenment of your money</h4>
+              </article>
+              <img src="img/pro-enlightenment.png" />
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="enlightenment"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    Enlightenment Finance
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Open crypto foundation</p>
+                  <p>
+                    <a href="https://enlightenment.finance/"
+                      >enlightenment.finance</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+           <div class="col-md-6 mb-md-0 container_foto wow fadeInLeft">
+            <div
+              class="container-container"
+              data-toggle="modal"
+              data-target="#mc"
+            >
+              <article class="text-left wow wobble slower">
+                <h2>Интернет магазин Сладостей</h2>
+                <h4>Бутик MC Chocolaterie</h4>
+              </article>
+              <img src="img/pro-mc.png" />
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="mc"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                      Интернет магазин Сладостей
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Mcchocolaterie.ru</p>
+                    <p>Бутик MC Chocolaterie
+                        Бутик MC Chocolaterie — это шоколадный бренд класса luxe, представленный в самом сердце города Новороссийска. Знаменитый своими шоколадными изделиями высочайшего качества, наш бренд перенес лучшие традиции европейской культуры в Россию.</p>
+                    <p><a href="https://mcchocolaterie.ru/">mcchocolaterie.ru</a></p>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+          <div class="col-md-6 mb-md-0 container_foto wow fadeInLeft">
+            <div
+              class="container-container"
+              data-toggle="modal"
+              data-target="#ht"
+            >
+              <article class="text-left wow wobble slower">
+                <h2>Сердце Города</h2>
+                <h4>Информационный портал для труристов</h4>
+              </article>
+              <img src="img/pro-ht.png" />
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="ht"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">
+                    Все активности заведения и мероприятия
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Рады приветствовать вас на нашем информационном портале посвященном городк - курорту Кисловодску
+                  </p>
+                  <p>
+Активности в нашем городе подобраны для каждого, будет трудно не найти себе развлечение, особенно в туристический сезон
+                  </p>
+                  <p>
+Мероприятия и спортивные площадки для детей и подростков
+                  </p>
+                  <p>
+Кинозалы, Экскурсии, Музеи для исследователей и путешествиников
+                  </p>
+                  <p>
+Эктремальные виды спорта и соревнования
+                  </p>
+                  <p>
+Семейные парки отдыха и велопрогулки
+                  </p>
+                  <p>
+Все это и даже больше на портале:
+                  </p>
+                  <p><a href="https://xn--b1aekhddvbxf.xn--80asehdb">Сердце Города</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="team-section hiro-section" id="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 wow fadeInUp">
-                    <h2 class="section-title">Знакомьтесь<br> с командой</h2>
-                    <p class="section-text-light">Мы являемся группой энтузиастов-программистов с богатым опытом разработки прогрессивных веб-приложений, обучения нейронных сетей и освоения больших данных. Мы верим в то, что всеобщая доступность информации способна изменить мир к лучшему. Мы разрабатываем сложные системы для простых людей. Все наши продукты основаны на проектах с открытым исходным кодом.</p>
-                    <div>
-                        <a class="carousel-control-prev" href="#hiroTeamCarousel" role="button" data-slide="prev">
-                            <img src="assets/images/arrow_left.png" alt="left arrow" width="20px">
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#hiroTeamCarousel" role="button" data-slide="next">
-                            <img src="assets/images/Arrow_right.png" alt="right arrow" width="20px">
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-7 wow fadeInRight">
-                    <div id="hiroTeamCarousel" class="hiro-team-carousel carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="team-card" data-animation="animated flipInY">
-                                            <img src="img/we-ev.png" class="team-member-thumbnail">
-                                            <div class="team-member-details">
-                                                <h6 class="team-member-name">Евгений Носов</h6>
-                                                <p class="team-member-title">Team Lead</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="team-card" data-animation="animated flipInY">
-                                            <img src="img/we-eg.png" class="team-member-thumbnail">
-                                            <div class="team-member-details">
-                                                <h6 class="team-member-name">Егор Шарыпин</h6>
-                                                <p class="team-member-title">CTO, Co-Founder</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="team-card" data-animation="animated flipInY">
-                                            <img src="img/we-nik.jpg" class="team-member-thumbnail">
-                                            <div class="team-member-details">
-                                                <h6 class="team-member-name">Никита Маденко</h6>
-                                                <p class="team-member-title">Project Manager</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="team-card" data-animation="animated flipInY">
-                                            <img src="img/we-li.jpg" class="team-member-thumbnail">
-                                            <div class="team-member-details">
-                                                <h6 class="team-member-name">Лия Балагурова</h6>
-                                                <p class="team-member-title">Developer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="team-card" data-animation="animated flipInY">
-                                            <img src="img/we-gri.jpg" class="team-member-thumbnail">
-                                            <div class="team-member-details">
-                                                <h6 class="team-member-name">Белогубов Григорий</h6>
-                                                <p class="team-member-title">Trainee</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="team-card" data-animation="animated flipInY">
-                                            <img src="img/we-vad.jpg" class="team-member-thumbnail">
-                                            <div class="team-member-details">
-                                                <h6 class="team-member-name">Анастасия Ромина</h6>
-                                                <p class="team-member-title">Trainee</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                            
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 wow fadeInUp">
+            <h2 class="section-title">
+              Знакомьтесь<br />
+              с командой
+            </h2>
+            <p class="section-text-light">
+              Мы являемся группой энтузиастов-программистов с богатым опытом
+              разработки прогрессивных веб-приложений, обучения нейронных сетей
+              и освоения больших данных. Мы верим в то, что всеобщая доступность
+              информации способна изменить мир к лучшему. Мы разрабатываем
+              сложные системы для простых людей. Все наши продукты основаны на
+              проектах с открытым исходным кодом.
+            </p>
+            <div>
+              <a
+                class="carousel-control-prev"
+                href="#hiroTeamCarousel"
+                role="button"
+                data-slide="prev"
+              >
+                <img
+                  src="assets/images/arrow_left.png"
+                  alt="left arrow"
+                  width="20px"
+                />
+                <span class="sr-only">до</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#hiroTeamCarousel"
+                role="button"
+                data-slide="next"
+              >
+                <img
+                  src="assets/images/Arrow_right.png"
+                  alt="right arrow"
+                  width="20px"
+                />
+                <span class="sr-only">после</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-7 wow fadeInRight">
+            <div
+              id="hiroTeamCarousel"
+              class="hiro-team-carousel carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="team-card" data-animation="animated flipInY">
+                        <img
+                          src="img/we-ev.png"
+                          class="team-member-thumbnail"
+                        />
+                        <div class="team-member-details">
+                          <h6 class="team-member-name">Евгений Носов</h6>
+                          <p class="team-member-title">Team Lead</p>
                         </div>
+                      </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="career-section hiro-section" id="career">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="section-title wow fadeInLeft">
-                        Построй<br>карьеру с нами
-                    </h2>
-                </div>
-                <div class="col-md-6 wow fadeInRight">
-                    <p class="section-text-ct mb-5">Мы предлагаем обучение с последующим трудоустройством и гарантированной заработной платой до 200&nbsp;000 руб.</p>
-                    <button class="hiro-btn-outline" data-toggle="modal" data-target="#car">ДЕТАЛИ</button>
-                </div>
-            </div>
-            <div class="modal fade" id="car" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Карьера вАйТи</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
+                    <div class="col-sm-6">
+                      <div class="team-card" data-animation="animated flipInY">
+                        <img
+                          src="img/we-eg.png"
+                          class="team-member-thumbnail"
+                        />
+                        <div class="team-member-details">
+                          <h6 class="team-member-name">Егор Шарыпин</h6>
+                          <p class="team-member-title">CTO, Co-Founder</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="modal-body">
-                        <h4>Сейчас открыта вакансия стажёра</h4>
-                        <p>Linux, Nginx;</p>
-                        <p>Back-end: Python, ASGI, FastAPI, Uvicorn, MongoDB, InfluxDB, Redis, RabbitMQ, WebSockets;</p>
-                        <p>Front-end: Node.js, Vite.js, Vue.js, Quasar;</p>
-                        <p>HTML5, CCS3;</p>
-                        <p>JavaScript ES6+;</p>
-                        <p>Git и Docket;</p>
-                        <p>Go и Rust;</p>
-                        <p>Эллиптическая криптография и блокчейн.</p>         
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="team-card" data-animation="animated flipInY">
+                        <img
+                          src="img/we-nik.jpg"
+                          class="team-member-thumbnail"
+                        />
+                        <div class="team-member-details">
+                          <h6 class="team-member-name">Никита Маденко</h6>
+                          <p class="team-member-title">Project Manager</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="team-card" data-animation="animated flipInY">
+                        <img
+                          src="img/we-li.jpg"
+                          class="team-member-thumbnail"
+                        />
+                        <div class="team-member-details">
+                          <h6 class="team-member-name">Лия Балагурова</h6>
+                          <p class="team-member-title">Developer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="team-card" data-animation="animated flipInY">
+                        <img
+                          src="img/we-gri.jpg"
+                          class="team-member-thumbnail"
+                        />
+                        <div class="team-member-details">
+                          <h6 class="team-member-name">Белогубов Григорий</h6>
+                          <p class="team-member-title">Trainee</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="team-card" data-animation="animated flipInY">
+                        <img
+                          src="img/we-vad.jpg"
+                          class="team-member-thumbnail"
+                        />
+                        <div class="team-member-details">
+                          <h6 class="team-member-name">Анастасия Ромина</h6>
+                          <p class="team-member-title">Trainee</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <section class="career-section hiro-section" id="career">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="section-title wow fadeInLeft">
+              Построй<br />карьеру с нами
+            </h2>
+          </div>
+          <div class="col-md-6 wow fadeInRight">
+            <p class="section-text-ct mb-5">
+              Мы предлагаем обучение с последующим трудоустройством и
+              гарантированной заработной платой до 200&nbsp;000 руб.
+            </p>
+            <button
+              class="hiro-btn-outline"
+              data-toggle="modal"
+              data-target="#car"
+            >
+              ДЕТАЛИ
+            </button>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="car"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">
+                  Карьера вАйТи
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h4>Сейчас открыта вакансия стажёра</h4>
+                <p>Linux, Nginx;</p>
+                <p>
+                  Back-end: Python, ASGI, FastAPI, Uvicorn, MongoDB, InfluxDB,
+                  Redis, RabbitMQ, WebSockets;
+                </p>
+                <p>Front-end: Node.js, Vite.js, Vue.js, Quasar;</p>
+                <p>HTML5, CCS3;</p>
+                <p>JavaScript ES6+;</p>
+                <p>Git и Docket;</p>
+                <p>Go и Rust;</p>
+                <p>Эллиптическая криптография и блокчейн.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="contact-section hiro-section" id="contact">
-        <div class="container wow fadeInUp">
-            <h6 class="font-weight-semibold mb-4 mb-md-0">Мы открыты для любых идей и предложений.</h6>
-            <h2 class="section-title">Давайте общаться</h2>
-            <div class="contact-address">
-                <div class="row">
-                    <div class="col-md-5">
-                        <p class="font-weight-medium">Кисловодск,<br> ул. Чайковского,<br>д. 26А офис 1</p>
-                    </div>
-                    <div class="col-md-5 mb-4 mb-md-0">
-                        <p class="font-weight-medium">
-                            <a href="tel:+79283468468">+7 928 346 84 68</a>
-                            <br>
-                            <a href="mailto:mail@yzoz.com">mail@yzoz.com</a>
-                        </p>
-                        <div class="nav contact-social-links">
-                                <a href="https://t.me/pastuhholmov" class="nav-link">
-                                    <i class="fa-brands fa-telegram"></i>
-                                </a>
-                                <a href="https://wa.me/79620031286" class="nav-link">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                </a>
-                                <a href="https://github.com/yzoz" class="nav-link">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                                <a href="https://www.youtube.com/@pastuhholmov" class="nav-link">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
-                                <a href="https://discord.gg/kjvBdmWU" class="nav-link">
-                                    <i class="fa-brands fa-discord"></i>
-                                </a>
-                            </div>
-                    </div>
-                    <div class="col-md-2 d-flex align-items-end">
-                        <a href="#top" class="go-top-btn">
-                            <img src="assets/images/arrow_up@1x.svg" alt="arrow up">
-                            <span class="sr-only">Go to top</span>
-                        </a>
-                    </div>
-                </div>
+      <div class="container wow fadeInUp">
+        <h6 class="font-weight-semibold mb-4 mb-md-0">
+          Мы открыты для любых идей и предложений.
+        </h6>
+        <h2 class="section-title">Давайте общаться</h2>
+        <div class="contact-address">
+          <div class="row">
+            <div class="col-md-5">
+              <p class="font-weight-medium">
+                Кисловодск,<br />
+                ул. Чайковского,<br />д. 26А офис 1
+              </p>
             </div>
+            <div class="col-md-5 mb-4 mb-md-0">
+              <p class="font-weight-medium">
+                <a href="tel:+79283468468">+7 928 346 84 68</a>
+                <br />
+                <a href="mailto:mail@yzoz.com">mail@yzoz.com</a>
+              </p>
+              <div class="nav contact-social-links">
+                <a href="https://t.me/pastuhholmov" class="nav-link">
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="https://wa.me/79620031286" class="nav-link">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://github.com/yzoz" class="nav-link">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/@pastuhholmov"
+                  class="nav-link"
+                >
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://discord.gg/kjvBdmWU" class="nav-link">
+                  <i class="fa-brands fa-discord"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-2 d-flex align-items-end">
+              <a href="#top" class="go-top-btn">
+                <img src="assets/images/arrow_up@1x.svg" alt="arrow up" />
+                <span class="sr-only">Go to top</span>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <footer class="hiro-footer wow fadeInUp">
-        <div class="container d-flex flex-wrap justify-content-lg-between align-items-center">
-            <p class="mb-0 footer-text">© ООО «вАйТи» 2022; ИНН: 2628061464; ОГРН: 1222600013041</p>
-            <!--nav class="footer-nav nav">
+      <div
+        class="container d-flex flex-wrap justify-content-lg-between align-items-center"
+      >
+        <p class="mb-0 footer-text">
+          © ООО «вАйТи» 2022; ИНН: 2628061464; ОГРН: 1222600013041
+        </p>
+        <!--nav class="footer-nav nav">
                 <a href="#!" class="nav-link">Terms and Conditions</a>
                 <a href="#!" class="nav-link">Privacy Policy</a>
                 <a href="#!" class="nav-link">Cookie Policy</a>
             </nav-->
-        </div>
+      </div>
     </footer>
 
     <script src="assets/vendors/wowjs/wow.min.js"></script>
@@ -747,8 +1358,7 @@
     <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        new WOW().init();
+      new WOW().init();
     </script>
-</body>
-
+  </body>
 </html>

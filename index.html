@@ -34,7 +34,7 @@
         (k = e.createElement(t)),
           (a = e.getElementsByTagName(t)[0]),
           (k.async = 1),
-          (k.src = r),
+          (k.src = r), 
           a.parentNode.insertBefore(k, a);
       })(
         window,
@@ -402,6 +402,12 @@
             <li data-target="#hiroHeaderCarousel" data-slide-to="2"></li>
           </ol>
         </div>
+        <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="botforauthonwebbot" data-size="medium" data-userpic="false" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+<script type="text/javascript">
+  function onTelegramAuth(user) {
+    alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+  }
+</script>
       </div>
     </header>
     <div class="hiro-nav-popup-modal">
